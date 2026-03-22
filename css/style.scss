@@ -189,15 +189,13 @@ ul {
     font-size: 1rem;
     line-height: 150%;
     font-weight: 400;
-    padding-right: 43px;
     white-space: nowrap;
-
-    li:last-child {
-        padding-right: 0;
-    }
-
+    gap: 40px;
 }
 
+.header__list {
+    gap: 43px;
+}
 
 .header__list {
     display: flex;
@@ -245,7 +243,7 @@ ul {
 .black_points--1 {
   position: absolute;
   top: 349px;
-  left: 1188px;
+  left: 1360px;
 
 }
 
@@ -284,13 +282,12 @@ ul {
 }
 
 .welcome__title{
-    margin-bottom: 64px;
-    margin-top: 24px;
     font-family: Overlock-Bold ;
     font-weight: 700;
     font-size: 4.25rem;
     color: map-get($colors, text-light);
     line-height: 115%;
+    height: 220px;
 }
 
 .welcome__buttons{
@@ -300,6 +297,7 @@ ul {
     font-family: OpenSans-SemiBold;
     font-weight: 600;
     align-content: center;
+    gap: 40px;
 }
 
 .welcome__button--get-started{
@@ -309,7 +307,6 @@ ul {
     width: 150px;
     height: map-get($sizes, btn-height);
     background: map-get($colors, light-bg);
-    margin-right:  40px;
 }
 
 .welcome__button--play-video{
@@ -325,6 +322,7 @@ ul {
     margin-top: 178px;
     margin-right: 42px;
     display: flex;
+    gap: 80px;
 
     h3{
         margin: 0 0 16px 0;
@@ -345,19 +343,6 @@ ul {
     }
 } 
 
-.info__block--coaches {
-    width: 122px;
-    margin-right: 80px;
-}
-
-.info__block--members {
-    width: 79px;
-    margin-right: 80px;
-}
-
-.info__block--programs {
-    width: 90px;
-}
  
 /*  FIND QUALITY */
 
@@ -375,11 +360,20 @@ ul {
   left: -17px;
 }
 
+.find-quality_title-block{
+    display: flex;
+    justify-content: center;
+    padding-top: 103px;
+    margin-bottom: 72px;
+
+}
+
 .find-quality__title {
   @extend %heading-primary;
-  width: 250px;
-  margin: 0 487px 72px 450px;
-  padding-top: 103px;
+  margin-right: 35px;
+//   width: 250px;
+//   margin: 0 487px 72px 450px;
+//   padding-top: 103px;
 }
 
 .find-quality_img {
@@ -390,29 +384,30 @@ ul {
 .find-quality_img--text {
     margin-top: 119px;
     width: 119px;
-    margin-left: 75px;
-    position: absolute;
     font-family: Overlock-Black ;
     font-weight: 900;
     font-size: 24px;
     line-height: 133%;
     text-align: center;
     color: map-get($colors, text-light);
-    position: absolute;
-
 }
 
-.nutrition-card__overlay{
-    margin-top: 171px;
-    position: absolute;
-    border-radius: 0 0 16px 16px;
-    width: 268px;
-    height: 215px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+.nutrition-card__overlay {
+  margin-top: 171px;
+  position: absolute;
+  border-radius: 0 0 16px 16px;
+  width: 268px;
+  height: 215px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+  display: flex;
+  justify-content: center;
 }
 
-.btn--read-more {
-  margin-left: 524px;
+
+
+.find-quality_btn {
+    display: flex;
+    justify-content: center;
 }
 
 .find-quality__image--group1 {
@@ -436,7 +431,7 @@ ul {
 
 .about-us__block {
   display: flex;
-  justify-content: space-between;
+  gap: 220px;
 }
 
 .about-us__list {
@@ -444,10 +439,12 @@ ul {
   line-height: 133%;
   text-align: right;
   margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .about-us__list li {
-  margin-bottom: 24px;
   position: relative;
   padding-right: 40px;
 }
@@ -481,7 +478,6 @@ ul {
 }
 
 
-
 .btn {
   font-family: OpenSans-SemiBold;
   font-weight: 600;
@@ -499,7 +495,6 @@ ul {
 
 .about-us__info {
   float: right;
-  margin-right: 60px;
   margin-top: 68px;
   width: 468px;
   height: 450px;
@@ -526,7 +521,7 @@ ul {
 }
 
 .our-trainer_block {
-  height: 697px;
+  height: 699px;
 }
 
 .our-trainer_svg {
@@ -535,11 +530,16 @@ ul {
   left: 1250px;
 }
 
+.our-trainer_block--title{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    margin-bottom: 48px;
+}
+
 .our-trainer_block h2 {
   @extend %heading-primary;
   line-height: 121%;
-  margin: 0 471px 48px 470px;
-  padding-top: 100px;
 }
 
 .our-trainers-card {
@@ -560,13 +560,17 @@ ul {
 }
 
 .our-trainers-card_list {
-  width: 106px;
-  display: grid;
-  grid-template-columns: repeat(3, 24px);
-  grid-template-rows: 24px;
-  grid-gap: 17px;
-  margin-left: 81px;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+}
+
+.our-trainers-card_list a {
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 /* DOWNLOAD*/
@@ -578,7 +582,7 @@ ul {
 
 .download__content {
   display: flex;
-  justify-content: space-between;
+  gap: 138px;
 }
 
 .top-img{
@@ -590,7 +594,7 @@ ul {
 .download__info {
   width: 409px;
   height: 225px;
-  margin: 167px 66px 0 139px;
+  margin-top: 167px;
 }
 
 .download__title {
@@ -674,13 +678,18 @@ ul {
 .client-block_svg{
   position: absolute;
   top: 3689px;
-  left: 40px;
+  left: 38px;
+}
+
+.client-block--title{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    margin-bottom: 49px;
 }
 
 .ourtrainer2 {
   @extend %heading-primary;
-  margin: 0 471px 50px 470px;
-  padding-top: 100px;
   line-height: 121%;
 }
 
@@ -819,12 +828,14 @@ ul {
   background-color: map-get($colors, dark-bg);
   border-radius: 32px;
   display: flex;
+  gap: 142px;
+  align-items: center;
 }
 
 .contact-block_base {
   width: 520px;
   height: 192px;
-  margin: 87px 142px 87px 96px;
+    margin-left: 96px;
 }
 
 .contact-block_base h2 {
@@ -834,7 +845,7 @@ ul {
   color: map-get($colors, text-light);
   width: 428px;
   height: 46px;
-  margin: 0 0 20px 0;
+  margin-bottom: 18px;
 }
 
 .contact-block_base p {
@@ -844,7 +855,7 @@ ul {
   font-size: 1.25rem;
   color: map-get($colors, text-light);
   letter-spacing: 2%;
-  margin: 0 0 35px 0;
+  margin-bottom: 37px;
 }
 
 .block-email {
@@ -858,7 +869,7 @@ ul {
 .client-block__email {
   border-radius: 30px;
   width: 124px;
-  padding: 18px 228px 18px 24px;
+  padding: 18px 228px 18px 25px;
   border: none;
   outline: none;
   font-size: 1rem;
@@ -874,12 +885,12 @@ ul {
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
+  margin-right: 4px;
 }
 
 .contact-block_img {
   width: 282px;
   height: 326px;
-  margin-top: 20px;
   display: flex;
 }
 
@@ -905,12 +916,18 @@ ul {
 
 .client-reviews {
     display: flex;
+    width: 1087px;
 }
 
 .client-reviews-block {
   width: 1087px;
   height: 501px;
   margin: 0 167px;
+}
+
+.client-reviews--title {
+    display: flex;
+    justify-content: center;
 }
 
 .client-reviews-block h2 {
@@ -920,11 +937,12 @@ ul {
   font-size: 2.25rem;
   text-align: center;
   color: map-get($colors, text-secondary);
-  margin: 0 189px;
 }
 
-.marks {
-  margin: 60px 289px 28px 295px;
+.client-reviews--marks {
+    display: flex;
+    justify-content: center;
+    margin: 57px 0 31px;
 }
 
 .client-reviews__text {
@@ -940,19 +958,21 @@ ul {
   letter-spacing: 1%;
 }
 
+.client-reviews--client{
+    display: flex;
+    justify-content: center;
+}
+
 .icon-client {
-  width: 240px;
   height: 80px;
   margin-top: 45px;
-  margin-left: 209px;
-  display: grid;
-  grid-template-columns: 56px 80px 56px;
-  grid-gap: 24px;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
 }
 
 .icon-client_top {
   position: absolute;
-  margin-left: 80px;
 }
 
 .shadow {
@@ -966,14 +986,23 @@ ul {
 
 .icon-client_center {
   margin-top: 12px;
+  width: 56px;
+  height: 56px;
+}
+
+.client-reviews--name {
+    display: flex;
+    justify-content: center;
 }
 
 .client {
-  width: 126px;
-  height: 56px;
-  margin-left: 265px;
-  margin-top: 17px;
+  margin-top: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
 }
+
 .client h5 {
   font-family: Inter_18pt-SemiBold;
   font-weight: 600;
@@ -992,25 +1021,24 @@ ul {
   text-transform: capitalize;
   text-align: center;
   color: #646370;
-  width: 80px;
-  margin: 0;
-  margin-top: 4px;
-  margin-left: 23px;
+}
+
+.client-reviews--switch{
+    display: flex;
+    align-items: center;
 }
 
 .left{
   margin-left: 41px;
-  margin-top: 218px;
-}
-
-.right {
-  margin-right: 42px;
-  margin-top: 218px;
+  
 }
 
 .switch{
   width: 48px;
   height: 48px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 21px;
 }
 
 // FOOTER 
@@ -1034,14 +1062,10 @@ ul {
   margin-right: 0;
 }
 
-.footer__logo {
-  margin-top: 72px;
-}
-
 .footer-top_info__text {
   width: 387px;
   height: 104px;
-  margin: 24px 0 56px 0;
+  margin: 22px 0 56px 0;
   font-family: Inter_18pt-Italic;
   font-style: italic;
   font-weight: 400;
@@ -1050,16 +1074,17 @@ ul {
   color: map-get($colors, text-muted);
 }
 
-.institutes {
-  margin-left: 161px;
-  margin-right: 160px;
-}
 
 .footer-links {
   display: flex;
-  margin-top: 72px;
-  margin-left: 108px;
   color: map-get($colors, text-muted);
+  gap: 160px;
+}
+
+.footer-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
 }
 
 .footer-links li {
@@ -1067,11 +1092,6 @@ ul {
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 144%;
-  color: map-get($colors, text-muted);
-  margin: 26px 0;
-}
-
-.footer-links a {
   color: map-get($colors, text-muted);
 }
 
@@ -1087,6 +1107,8 @@ ul {
 
 .footer-top-block {
   display: flex;
+  padding-top: 72px;
+  gap: 108px;
 }
 
 .footer-bottom {
@@ -1096,7 +1118,7 @@ ul {
 
 .footer-title {
   display: flex;
-  margin-left: 422px;
+  justify-content: center;
   height: 24px;
   font-family: Inter_24pt-Regular;
   font-weight: 400;
@@ -1116,7 +1138,7 @@ ul {
   font-weight: 400;
   font-size: 16px;
   color: #c7c2ca;
-  margin-top: 27px;
+  margin-top: 25px;
   letter-spacing: 1%;
 }
 
@@ -1132,7 +1154,6 @@ ul {
 
     .header__container {
         flex-wrap: wrap;
-        justify-content: space-between;
     }
     .black_points--2 {
         display: none;
@@ -1153,7 +1174,8 @@ ul {
 
     .header__list {
         width: 100%;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 20px;
     }
 
     .header__nav li {
@@ -1162,7 +1184,7 @@ ul {
     }
 
     .header__button--signup {
-        margin-left: 50px;
+        margin-left: 100px;
         width: 80px;
         height: 40px;
         font-size: 0.85rem;
@@ -1201,6 +1223,7 @@ ul {
     .welcome__title {
         font-size: 2.5rem;
         margin-bottom: 30px;
+        height: 150px;
     }
 
     .welcome__buttons {
@@ -1231,7 +1254,7 @@ ul {
         margin-top: 50px;
         justify-content: center;
         margin-right: 0;
-        flex-wrap: wrap;
+        gap: 15px;
     }
 
     .info__block--coaches,
@@ -1259,10 +1282,14 @@ ul {
         padding-bottom: 60px;
     }
 
+    .find-quality_title-block{
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+
     .find-quality__title {
         width: 100%;
-        margin: 0 auto 50px;
-        padding-top: 50px;
+        margin: 0 auto;
         text-align: center;
         font-size: 2.2rem;
     }
@@ -1370,9 +1397,13 @@ ul {
         display: none;
     }
 
+    .our-trainer_block--title {
+        padding: 50px 0 0;
+        margin-bottom: 50px;
+    }
+
     .our-trainer_block h2 {
-        margin: 0 auto 50px;
-        padding-top: 50px;
+        margin: 0 auto;
         font-size: 2.2rem;
         text-align: center;
     }
@@ -1409,6 +1440,7 @@ ul {
     .download__content {
         flex-direction: column;
         align-items: center;
+        gap: 0px;
     }
 
     .top-img {
@@ -1460,9 +1492,12 @@ ul {
         display: none;
     }
 
-    .ourtrainer2 {
-        margin: 0 auto;
+    .client-block--title {
+        margin-bottom: 50px;
         padding-top: 50px;
+    }
+
+    .ourtrainer2 {
         font-size: 2.2rem;
         text-align: center;
     }
@@ -1558,14 +1593,15 @@ ul {
 
     /* CLIENT REVIEWS */
     .client-reviews {
-        flex-direction: column;
-        align-items: center;
+        width: 300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
     }
 
     .client-reviews-block {
         width: 100%;
         height: auto;
-        margin: 0;
     }
 
     .client-reviews-block h2 {
@@ -1573,9 +1609,10 @@ ul {
         font-size: 1.8rem;
     }
 
-    .marks {
-        margin: 30px auto;
-        display: block;
+    .client-reviews--marks{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
     }
 
     .client-reviews__text {
@@ -1600,7 +1637,6 @@ ul {
     /* FOOTER */
     .footer-top {
         height: auto;
-        padding: 40px 0;
     }
 
     .footer-top-block {
@@ -1615,7 +1651,7 @@ ul {
     }
 
     .footer__logo {
-        margin-top: 0;
+        margin-bottom: 30px;
     }
 
     .footer-top_info__text {
@@ -1636,16 +1672,12 @@ ul {
         gap: 30px;
     }
 
-    .institutes {
-        margin: 0;
+    .support {
+        margin-bottom: 25px;
     }
 
     .footer-links h3 {
         margin-bottom: 20px;
-    }
-
-    .footer-links li {
-        margin: 15px 0;
     }
 
     .footer-title {
